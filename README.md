@@ -1,4 +1,4 @@
-# ReduxSimpleStarter
+# Project from Video Casts with a boilerplate ReduxSimpleStarter
 
 Interested in learning [Redux](https://www.udemy.com/react-redux/)?
 
