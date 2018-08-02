@@ -8,12 +8,17 @@ module.exports = {
   module: {
     loaders: [
       {
-        exclude: /node_modules/,
+        exclude: [
+          /node_modules/,
+          /\.scss$/
+        ],
         loader: 'babel',
         query: {
           presets: ['react', 'es2015', 'stage-1']
         }
-      }
+      },
+      { test: /(\.css)$/, loaders: ['style', 'css'] },
+      { test: /\.scss$/, loaders: ['style', 'css', 'sass', 'scss'] }
     ]
   },
   resolve: {
